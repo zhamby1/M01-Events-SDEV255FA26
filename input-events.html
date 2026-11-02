@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer type="text/javascript" src="input-events.js"></script>
+</head>
+<body>
+<!--This webpage displays information about a user after they fill in some data elsewhere on the page-->
+<!--Forms allow for data input from the user..they can be part of a form tag, or live outside it-->
+<!--we use form controls to allow for data entry, radio buttons, dropdowns etc...-->
+<!--form controls usually have two pieces..the label and the control itself-->
+
+<label for="message">Message:</label>
+<input placeholder="Enter some text" id="message" name="message">
+<p id="result"></p>
+
+<p>
+    <label for="ageInput">Age</label>
+    <input id="ageInput" type="text">
+</p>
+<p>
+    <label for="salaryInput">Salary</label>
+    <input id="salaryInput" type="text">
+</p>
+<button onclick="displayAgeSalary()">Click to Display</button>
+
+<p id="display"></p>
+
+
+</body>
+</html>
